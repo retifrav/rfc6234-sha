@@ -4,11 +4,16 @@ RFC 6234: US Secure Hash Algorithms (SHA and SHA-based HMAC and HKDF).
 
 ## Version
 
-The source code (*seems to be*) from <https://www.rfc-editor.org/rfc/rfc6234#section-8>. There is no version, so the publication date (*May 2011*) is used to form the version `2011.5.1`.
+The source code (*seems to be*) from <https://rfc-editor.org/rfc/rfc6234#section-8>. There is no version, so the publication date (*May 2011*) is used to form the version `2011.5.1`.
 
 ## License
 
-The license seems to be [this](https://trustee.ietf.org/documents/trust-legal-provisions/) (*the `copyright` file*). It is not really an "Open Source", but seems to be "safe" enough. Apparently, it does not allow modifications. There is also some FAQ [here](https://trustee.ietf.org/about/faq/).
+The code here is the reference implementation from [RFC 6234, Section 8](https://rfc-editor.org/rfc/rfc6234#section-8), which makes it a *Code Component* of that RFC. Under [Section 4.e](https://trustee.ietf.org/documents/trust-legal-provisions/) of the IETF Trust Legal Provisions, Code Components are licensed under the three-clause Revised BSD License, which is reproduced in [`LICENSE`](./LICENSE) and is also carried in the header of `include/sha.h`. The SPDX identifier is `BSD-3-Clause`.
+
+Two things are worth mentioning in addition to that:
+
+1. RFC 6234 calls this the *"Simplified BSD License"*, which is the conventional name for the two-clause BSD license. That name was an error in the TLP itself, and the IETF Trust [corrected it](https://trustee.ietf.org/documents/trust-legal-provisions/) on 21 September 2021 - the text it provides was always the Revised (*three-clause*) BSD License. Many RFCs copied the wrong name;
+2. The TLP does restrict modifying and redistributing the text of an RFC *document*. That restriction does not extend to Code Components extracted from it, so this code is ordinary open source and may be modified and redistributed under the BSD terms above.
 
 ## Building
 
